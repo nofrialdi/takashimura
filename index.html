@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Takashimura store</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <img class="logo" src="/images/new_logo.png" alt="">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Check Invoice</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- slider -->
+    <div id="slider" class="slider">
+        <figure>
+            <img src="/images/slider-1.png" alt>
+            <img src="/images/slider-2.png" alt>
+            <img src="/images/slider-3.jpg" alt>
+            <img src="/images/slider-4.jpg" alt>
+            <img src="/images/slider-1.png" alt>
+        </figure>
+    </div>
+    <!-- end slider -->
+
+    <!-- product -->
+    <section class="container-product">
+        <div class="header">
+            <h1>CATEGORY PRODUCT</h1>
+        </div>
+
+        <div class="menu">
+            <div class="container-menu">
+                <a class="btn-menu" id="btn_topup" onclick="topup()" href="">TOP UP</a>
+                <a class="btn-menu" id="btn_voucher" onclick="voucher()" href="">VOUCHER</a>
+                <a class="btn-menu" id="btn_pulsa" href="">PULSA</a>
+                <a class="btn-menu" id="btn_emoney" href="">E-MONEY</a>
+                <a class="btn-menu" id="btn_hiburan" href="">HIBURAN</a>
+                <!-- <button class="btn-menu" id="btn_topup">TOP UP</button>
+                <button class="btn-menu" id="btn_voucher">TOP UP</button> -->
+                <!-- <button onclick="topup()">TOP UP</button>
+                <button onclick="voucher()">VOUCHER</button>
+                <button onclick="pulsa()">PULSA</button> -->
+            </div>
+
+        </div>
+
+
+        <div class="list-product">
+            <div class="topup" id="topup">
+                <h1> TOP UP</h1>
+                <section class="produk">
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="/images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="/images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="voucher" id="voucher">
+                <h1>VOUCHER</h1>
+                <section class="produk">
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="pulsa" id="pulsa">
+                <h1>PULSA</h1>
+                <section class="produk">
+                    <div class="card">
+                        <a href="">
+                            <img class="logo-product" src="images/mlbb.jpg" alt="">
+                            <div class="judul-produk">MOBILE LEGENDS
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script>
+        let btnTopup = document.getElementById(btn_topup);
+        let btnVoucher = document.getElementById(btn_voucher);
+        let topup = document.getElementById("topup");
+        let voucher = document.getElementById("voucher");
+        btnTopup.addEventListener('click', () => {
+            topup.style.display = 'block';
+            voucher.style.display = 'none';
+        });
+
+        btnVoucher.addEventListener('click', () => {
+            topup.style.display = 'none';
+            voucher.style.display = 'block';
+        });
+
+
+    </script> -->
+
+    <script>
+        function topup() {
+            document.getElementById("topup").style.display = "block";
+            document.getElementById("voucher").style.display = "none";
+            document.getElementById("pulsa").style.display = "none";
+        }
+
+        function voucher() {
+            document.getElementById("topup").style.display = "none";
+            document.getElementById("voucher").style.display = "block";
+            document.getElementById("pulsa").style.display = "none";
+        }
+
+        function pulsa() {
+            document.getElementById("topup").style.display = "none";
+            document.getElementById("voucher").style.display = "none";
+            document.getElementById("pulsa").style.display = "block";
+
+        }
+
+
+    </script>
+
+    <!-- end product -->
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
